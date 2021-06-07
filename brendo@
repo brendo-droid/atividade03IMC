@@ -1,0 +1,50 @@
+/ *
+ * Para alterar este cabeçalho de licença, escolha Cabeçalhos de licença em Propriedades do projeto.
+* Para alterar este arquivo de modelo, escolha Ferramentas | Modelos
+ * e abra o modelo no editor.
+ * /
+package unid5code1b;
+
+import javax.swing.JOptionPane;
+
+/ **
+ *
+ * @author Tobias
+ * /
+public class Unid5Code1b {
+        
+    public static void main (String [] args) {
+        
+        peso duplo, altura, imc;
+        
+        peso = Double.parseDouble (JOptionPane.showInputDialog ("Insira seu peso"));
+        altura = Double.parseDouble (JOptionPane.showInputDialog ("Insira sua altura"));
+          
+        imc = (peso / (altura * altura));
+        
+       
+        if (imc <17) {
+            JOptionPane.showMessageDialog (null, "IMC:" + imc);
+            JOptionPane.showMessageDialog (null, "Situação: Muito abaixo do peso");
+        } else if (imc> = 17 && imc <= 18,49) {
+            JOptionPane.showMessageDialog (null, "IMC:" + imc);
+            JOptionPane.showMessageDialog (null, "Situação: Abaixo do peso");
+        } else if (imc> = 18,50 && imc <= 24,99) {
+            JOptionPane.showMessageDialog (null, "IMC:" + imc);
+            JOptionPane.showMessageDialog (null, "Situação: Peso normal");   
+        } else if (imc> = 25 && imc <= 29,99) {
+            JOptionPane.showMessageDialog (null, "IMC:" + imc);
+            JOptionPane.showMessageDialog (null, "Situação: Acima do peso");         
+        } else if (imc> = 30 && imc <= 34,99) {
+            JOptionPane.showMessageDialog (null, "IMC:" + imc);
+            JOptionPane.showMessageDialog (null, "Situação: Obesidade I");
+        } else if (imc> = 35 && imc <= 39,99) {
+            JOptionPane.showMessageDialog (null, "IMC:" + imc);
+            JOptionPane.showMessageDialog (null, "Situação: Obesidade II (severa)");
+        } else if (imc> = 40) {
+            JOptionPane.showMessageDialog (null, "IMC:" + imc);
+            JOptionPane.showMessageDialog (null, "Situação: Obesidade III (mórbida)");   
+        }        
+                                                
+    }
+}
